@@ -13,8 +13,8 @@ import java.util.List;
 public class Chapter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String name;
     private Long ChapterId;
+    private String name;
     private String district;
     @OneToOne
     @JoinColumn(name = "president_id", referencedColumnName = "memberId", nullable = false)

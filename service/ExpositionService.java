@@ -12,7 +12,7 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class ExpositionService {
-    private ExpositionRepository expositionRepository;
+    private final ExpositionRepository expositionRepository;
 
     public List<Exposition> getAllExpositions() {
         return expositionRepository.findAll();
