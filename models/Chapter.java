@@ -13,7 +13,7 @@ import java.util.List;
 public class Chapter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ChapterId;
+    private Long chapterId;
     private String name;
     private String district;
     @OneToOne
